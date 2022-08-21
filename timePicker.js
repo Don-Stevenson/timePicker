@@ -1,8 +1,6 @@
 const prompts = require("prompts");
 
 // helpers
-// **********
-
 const validateAmOrPm = (value) => {
   if (value === "am" || value === "pm") {
     return true;
@@ -16,7 +14,7 @@ const minGen = () => {
   return mins === 60 || mins === 0 ? "00" : mins;
 };
 
-
+// questions
 const questions = [
   {
     type: "text",
@@ -31,6 +29,7 @@ Choose morning (am) or evening (pm)?`,
   },
 ];
 
+// run program
 (async () => {
   const response = await prompts(questions);
 
