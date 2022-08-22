@@ -22,7 +22,7 @@ const questions = [
     initial: `enter "am" or "pm"`,
     message: `
   * Welcome to TimePickr! *
-  **************************
+  *************************
 A program to help you pick a time
 
 Choose morning (am) or evening (pm)?`,
