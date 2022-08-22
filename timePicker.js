@@ -21,9 +21,10 @@ const questions = [
     name: "amOrPm",
     initial: `enter "am" or "pm"`,
     message: `
-* Welcome to TimePickr! *
-**************************
+  * Welcome to TimePickr! *
+  **************************
 A program to help you pick a time
+
 Choose morning (am) or evening (pm)?`,
     validate: (amOrPm) => validateAmOrPm(amOrPm),
   },
@@ -35,8 +36,9 @@ Choose morning (am) or evening (pm)?`,
 
   const output = `  
     * Thank you for using TimePickr *
-    ***************************
+    *********************************
     Here is your generated time
+
     ${hour}:${minGen()}${response.amOrPm}
     `;
 
