@@ -35,9 +35,9 @@ or hit "escape" to quit
 
 // run program
 ;(async () => {
-  
+
   const onCancel = () => {
-    console.log("Never stop prompting!")
+    console.log("Goodbye!")
     return true
   }
   const response = await prompts(questions, { onCancel })
