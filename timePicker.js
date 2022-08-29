@@ -15,6 +15,10 @@ const minGen = () => {
   return mins === 60 || mins === 0 ? "00" : mins
 }
 
+const onCancel = () => {
+  return true
+}
+
 // questions
 const questions = [
   {
@@ -35,20 +39,18 @@ or hit "escape" to quit
 
 // run program
 ;(async () => {
-
-  const onCancel = () => {
-    console.log("Goodbye!")
-    return true
-  }
   const response = await prompts(questions, { onCancel })
-
   const output = `  
-    * Thank you for using TimePickr *
-    *********************************
-    Here is your generated time
+  * Thank you for using TimePickr *
+  *********************************
+  Here is your generated time
 
-    ${hour}:${minGen()}${response.amOrPm}
-    `
-
-  console.log(output)
+  ${hour}:${minGen()}${response.amOrPm}
+  `
+  if (response.amOrPm) console.log(output)
+  else {
+    console.log(`
+  goodbye! 
+  ********`)
+  }
 })()
