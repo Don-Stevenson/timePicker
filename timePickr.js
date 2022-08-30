@@ -4,7 +4,6 @@ const prompts = require("prompts")
 const validateAmOrPm = value => {
   if (value === "am" || value === "pm") {
     return true
-  } else if (value === "") {
   } else return `Error!! Please enter either "am" or "pm" only`
 }
 
@@ -15,9 +14,7 @@ const minGen = () => {
   return mins === 60 || mins === 0 ? "00" : mins
 }
 
-const onCancel = () => {
-  return true
-}
+const onCancel = () => true
 
 // questions
 const questions = [
@@ -48,9 +45,8 @@ or hit "escape" to quit
   ${hour}:${minGen()}${response.amOrPm}
   `
   if (response.amOrPm) console.log(output)
-  else {
-    console.log(`
-  goodbye! 
-  ********`)
-  }
+  else console.log(`
+  'Escape' selected, program has been aborted. Goodbye! 
+  `)
+  
 })()
