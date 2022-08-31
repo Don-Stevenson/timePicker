@@ -44,10 +44,10 @@ or hit "escape" to quit
 
   ${hour}:${minGen()}${response.amOrPm}
   `;
-  
+
   if (response.amOrPm) console.log(output);
   else
     console.log(`
-  'Escape' selected, program has been aborted. Goodbye! 
+  'The program has been aborted. Goodbye! 
   `);
 })();
