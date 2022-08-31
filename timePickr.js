@@ -36,6 +36,7 @@ or hit "escape" to quit
 // run program
 (async () => {
   const response = await prompts(questions, { onCancel });
+
   const output = `  
   * Thank you for using TimePickr *
   *********************************
@@ -43,6 +44,7 @@ or hit "escape" to quit
 
   ${hour}:${minGen()}${response.amOrPm}
   `;
+  
   if (response.amOrPm) console.log(output);
   else
     console.log(`
