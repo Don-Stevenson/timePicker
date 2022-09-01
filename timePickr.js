@@ -1,5 +1,7 @@
 const prompts = require("prompts")
 
+
+// TODO: refactor helpers to external file
 // helpers
 const validateAmOrPm = value =>
   value === "am" || value === "pm"
