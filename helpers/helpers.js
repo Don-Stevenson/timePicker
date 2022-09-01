@@ -34,5 +34,4 @@ or hit "escape" to quit
 exports.hour = hour
 exports.minGen = minGen
 exports.onCancel = onCancel
-exports.validateAmOrPm = validateAmOrPm
 exports.questions = questions

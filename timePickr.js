@@ -2,7 +2,7 @@
 const prompts = require("prompts")
 
 // import helpers
-const { hour, minGen, questions, onCancel} = require("./modules/helpers.js");
+const { hour, minGen, questions, onCancel} = require("./helpers/helpers.js");
 
 // run program
 ;(async () => {
@@ -19,6 +19,6 @@ const { hour, minGen, questions, onCancel} = require("./modules/helpers.js");
   if (response.amOrPm) console.log(output)
   else
     console.log(`
-  'The program has been aborted. Goodbye! 
+  The program has been aborted. Goodbye! 
   `)
 })()
