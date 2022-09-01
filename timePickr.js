@@ -1,23 +1,8 @@
+// requires
 const prompts = require("prompts")
-import { validateAmOrPm, hour, minGen, onCancel } from "./helpers"
 
-// questions
-const questions = [
-  {
-    type: "text",
-    name: "amOrPm",
-    initial: `enter "am" or "pm"`,
-    message: `
-  * Welcome to TimePickr! *
-  *************************
-A program to help you pick a time
-
-Choose morning (am) or evening (pm)?
-or hit "escape" to quit
-`,
-    validate: amOrPm => validateAmOrPm(amOrPm),
-  },
-]
+// import helpers
+const { hour, minGen, questions, onCancel} = require("./modules/helpers.js");
 
 // run program
 ;(async () => {
