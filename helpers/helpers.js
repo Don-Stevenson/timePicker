@@ -4,8 +4,6 @@ const validateAmOrPm = value =>
     ? true
     : `Error!! Please enter either "am" or "pm" only`
 
-const onCancel = () => true
-
 // questions
 const questions = [
   {
