@@ -2,8 +2,8 @@
 const prompts = require("prompts")
 
 // import helpers
-const { hour, minGen, questions, onCancel} = require("./helpers/helpers.js");
-
+const { hour, questions, onCancel} = require("./helpers/helpers.js");
+const {minGen} = require('./helpers/minGen')
 // run program
 ;(async () => {
   const response = await prompts(questions, { onCancel })
