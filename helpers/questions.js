@@ -22,7 +22,4 @@ or hit "escape" to quit
   },
 ]
 
-exports.hour = hour
-exports.minGen = minGen
-exports.onCancel = onCancel
 exports.questions = questions
