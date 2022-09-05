@@ -22,6 +22,6 @@ const { onCancel } = require("./helpers/onCancel");
   if (response.amOrPm) console.log(output);
   else
     console.log(`
-  The program has been aborted. Goodbye! 
+  Timepickr has been aborted. Goodbye! 
   `);
 })();
