@@ -1,8 +1,5 @@
 // helpers
-const validateAmOrPm = value =>
-  value === "am" || value === "pm"
-    ? true
-    : `Error!! Please enter either "am" or "pm" only`
+const { validateAmOrPm } = require("./validateAmOrPm")
 
 // questions
 const questions = [
