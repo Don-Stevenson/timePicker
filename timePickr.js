@@ -16,7 +16,7 @@ const { onCancel } = require("./helpers/onCancel");
   *********************************
   Here is your generated time
 
-  ${hour}:${minGen()}${response.amOrPm}
+  ${hour()}:${minGen()}${response.amOrPm}
   `;
 
   if (response.amOrPm) console.log(output);
