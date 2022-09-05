@@ -1,4 +1,4 @@
-// helpers
+// helper
 const { validateAmOrPm } = require("./validateAmOrPm")
 
 // questions
