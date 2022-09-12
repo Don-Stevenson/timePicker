@@ -15,8 +15,8 @@ A program to help you pick a time
 Choose morning (am) or evening (pm)?
 or hit "escape" to quit
 `,
-    validate: amOrPm => validateAmOrPm(amOrPm),
-  },
+    validate: amOrPm => validateAmOrPm(amOrPm)
+  }
 ]
 
 exports.questions = questions
