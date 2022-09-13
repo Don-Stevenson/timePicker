@@ -2,5 +2,9 @@
   "tabWidth": 2,
   "useTabs": false,
   "semi": false,
-  "arrowParens": "avoid"
+  "arrowParens": "avoid",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  }
 }
