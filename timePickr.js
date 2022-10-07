@@ -17,8 +17,8 @@ const { onCancel } = require("./helpers/onCancel")
   Here is your generated time
 
   `
-
-  if (!response.amOrPm) console.log(`
+  if (!response.amOrPm)
+    console.log(`
   Timepickr has been aborted. Goodbye!
   `)
   else console.log(header, `${hour()}:${minGen()}${response.amOrPm}`)

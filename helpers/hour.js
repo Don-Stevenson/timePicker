@@ -1,7 +1,6 @@
 const hour = () => {
   const generatedHour = (Math.random() * 12).toFixed(0)
-  if (generatedHour > 10 || generatedHour < 1) return hour()
-  else return generatedHour
+  return generatedHour > 12 || generatedHour < 1 ? hour() : generatedHour
 }
 
 exports.hour = hour
