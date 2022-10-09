@@ -7,19 +7,19 @@ const { hour } = require("./helpers/hour")
 const { questions } = require("./helpers/questions")
 const { onCancel } = require("./helpers/onCancel")
 
-// run program
-;(async () => {
-  const response = await prompts(questions, { onCancel })
+  // run program
+  ; (async () => {
+    const { amOrPm } = await prompts(questions, { onCancel })
 
-  const header = `  
+    const header = `  
   * Thank you for using TimePickr *
   *********************************
   Here is your generated time
 
   `
-  if (!response.amOrPm)
-    console.log(`
+    if (!amOrPm)
+      console.log(`
   Timepickr has been aborted. Goodbye!
   `)
-  else console.log(header, `${hour()}:${minGen()}${response.amOrPm}`)
-})()
+    else console.log(header, `${hour()}:${minGen()}${amOrPm}`)
+  })()
