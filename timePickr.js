@@ -9,7 +9,7 @@ const { onCancel } = require("./helpers/onCancel")
 
 // run program
 ;(async () => {
- const response = await prompts(questions, { onCancel })
+ const { amOrPm } = await prompts(questions, { onCancel })
 
  const header = `  
   * Thank you for using TimePickr *
@@ -17,9 +17,9 @@ const { onCancel } = require("./helpers/onCancel")
   Here is your generated time
 
   `
- if (!response.amOrPm)
+ if (!amOrPm)
   console.log(`
   Timepickr has been aborted. Goodbye!
   `)
- else console.log(header, `${hour()}:${minGen()}${response.amOrPm}`)
+ else console.log(header, `${hour()}:${minGen()}${amOrPm}`)
 })()
