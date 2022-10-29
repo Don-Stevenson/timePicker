@@ -14,7 +14,7 @@ const { onCancel } = require("./helpers/onCancel")
  const header = `  
   * Thank you for using TimePickr *
   *********************************
-  Here is your generated time
+  Here is the generated time
 
   `
  if (!amOrPm)
